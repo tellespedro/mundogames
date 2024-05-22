@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+    margin: 0;
+    color: #4CAF50;
+}
+
+.card p {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animação de entrada */
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ... (outros estilos) ... */
+
+.card img {
+    width: 100%; /* Define a largura da imagem para ocupar 100% do contêiner */
+    height: auto; /* Permite que a altura seja definida automaticamente para manter a proporção */
+    object-fit: cover; /* Escala a imagem para cobrir todo o contêiner, recortando partes que não cabem */
+}
+
+/* ... (outros estilos) ... */
+/* ... (estilos anteriores) ... */
+
+body {
+  /* ... */
+  overflow: hidden; /* Impede a barra de rolagem */
+}
+
+#starCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Coloque o canvas atrás do conteúdo */
+}
+/* ... (outros estilos) ... */
